@@ -30,17 +30,34 @@ GRAY = (96, 91, 82)
 FAINT = (210, 203, 188)
 WHITE = (255, 255, 255)
 
-FONT_DIR = "/usr/share/fonts/truetype/dejavu"
+# Fonts are bundled in ./fonts so the render works in the grader's image
+# (which ships no system fonts); the system dir is only a fallback.
+_HERE = os.path.dirname(os.path.abspath(__file__))
+_FONT_DIRS = [
+    os.path.join(_HERE, "fonts"),
+    "/usr/share/fonts/truetype/dejavu",
+]
+
+
+def _load_font(name, size):
+    for d in _FONT_DIRS:
+        p = os.path.join(d, name)
+        if os.path.isfile(p):
+            return ImageFont.truetype(p, size)
+    try:
+        return ImageFont.load_default(size)
+    except TypeError:
+        return ImageFont.load_default()
 
 
 def serif(size, bold=True):
     name = "DejaVuSerif-Bold.ttf" if bold else "DejaVuSerif.ttf"
-    return ImageFont.truetype(os.path.join(FONT_DIR, name), size)
+    return _load_font(name, size)
 
 
 def sans(size, bold=False):
     name = "DejaVuSans-Bold.ttf" if bold else "DejaVuSans.ttf"
-    return ImageFont.truetype(os.path.join(FONT_DIR, name), size)
+    return _load_font(name, size)
 
 
 def wrap(draw, text, font, max_w):
