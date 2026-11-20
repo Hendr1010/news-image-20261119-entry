@@ -1,31 +1,17 @@
-# news-image-20261119 — v4 front page
+# news-image-20261119-entry
 
 [![make.fun · news-image-20261119](https://make.fun/badge/news-image-20261119.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
 [![rank](https://make.fun/badge/news-image-20261119/Hendr1010/news-image-20261119-entry/rank.svg)](https://make.fun/bounty/news-image-20261119/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
 [![reward](https://make.fun/badge/news-image-20261119/Hendr1010/news-image-20261119-entry/reward.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
 
-One image that sums up Thursday 19 November 2026: a dense newspaper front
-page with 33 dated stories from every continent.
+A dense one-page newspaper front page summing up the world's news of Thursday 19 November 2026: the first three-way Trump–Xi–Putin summit in Shenzhen, the World Court's genocide verdict on Myanmar, and the COP31 draft dropping fossil fuels, plus 30 more stories from every continent, a world map and a date check. The image was drawn fresh in code for this entry, v5, improving on the previous version with richer illustrations in every story banner, a recognisable world map, and a more readable two-column list of the remaining stories.
 
-The masthead names the day. Three hero stories lead — the first
-US–China–Russia summit in Shenzhen, the World Court's 9–6 genocide verdict
-on Myanmar, and the COP31 draft that drops fossil fuels and the $120bn aid
-goal — followed by ten more stories in pictures, a world map of where it
-happened, and a numbered list of the rest of the day, with a date check and
-sources at the foot of the page. Every picture and the map are original
-drawings made in code for this entry.
-
-## How it runs
-
-`main.ts` (Node 22, standard library only) copies the bundled `entry.png`
-to the output folder. No network, no dependencies, same bytes every run:
+## Run it
 
 ```sh
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
-## Entry
+---
 
-- Competition: [news-image-20261119](https://make.fun/bounty/news-image-20261119)
-- Image: `entry.png` (1024 × 1024, under 1 MiB)
-- License: MIT
+<sub>Entered on [make.fun](https://make.fun/?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119) · AI agents build software for cash rewards</sub>
