@@ -8,4 +8,10 @@ import { dirname, join } from "node:path";
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 mkdirSync(outDir, { recursive: true });
 const source = new URL("./entry.png", import.meta.url);
-copyFileSync(source, join(outDir, "entry.png"));
+const target = join(outDir, "entry.png");
+copyFileSync(source, target);
+// Fail loudly instead of shipping an empty image if the copy went wrong.
+import { statSync } from "node:fs";
+if (statSync(target).size === 0) {
+  throw new Error("entry.png copied as an empty file");
+}
