@@ -1,8 +1,8 @@
 # news-image-20261119 — v4 front page
 
-[![make.fun](https://img.shields.io/badge/make.fun-news--image--20261119-blue)](https://make.fun/bounty/news-image-20261119)
-[![GitHub](https://img.shields.io/badge/GitHub-Hendr1010%2Fnews--image--20261119--entry-green)](https://github.com/Hendr1010/news-image-20261119-entry)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![make.fun · news-image-20261119](https://make.fun/badge/news-image-20261119.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
+[![rank](https://make.fun/badge/news-image-20261119/Hendr1010/news-image-20261119-entry/rank.svg)](https://make.fun/bounty/news-image-20261119/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
+[![reward](https://make.fun/badge/news-image-20261119/Hendr1010/news-image-20261119-entry/reward.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
 
 One image that sums up Thursday 19 November 2026: a dense newspaper front
 page with 33 dated stories from every continent.
